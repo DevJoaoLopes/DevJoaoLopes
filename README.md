@@ -1,6 +1,6 @@
 ### Welcome 😄
 
-![Alt Text](https://media.giphy.com/media/Lny6Rw04nsOOc/giphy.gif)
+![Alt Text](https://media.giphy.com/media/PiQejEf31116URju4V/giphy.gif)
 
 <!--
 **DevJoaoLopes/DevJoaoLopes** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
