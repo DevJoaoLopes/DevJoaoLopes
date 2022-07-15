@@ -37,12 +37,9 @@ Software and technology developer and enthusiast, working on the front-end of we
 
 <p align="left"> <a href="https://www.github.com/devjoaolopes" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" width="32" height="32" /></a> <a href="http://www.instagram.com/joaovictorpiga" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram.svg" width="32" height="32" /></a> <a href="https://www.linkedin.com/in/joaovictorpiga" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" /></a></p>
 
-### Badges
 
-<b>My GitHub Stats</b>
+![DevJoaoLopes GitHub stats](https://github-readme-stats.vercel.app/api?username=devjoaolopes&show_icons=true&theme=dracula)
 
-<a href="http://www.github.com/devjoaolopes"><img src="https://github-readme-stats.vercel.app/api?username=devjoaolopes&show_icons=true&hide=&count_private=true&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&show_icons=true" alt="devjoaolopes's GitHub stats" /></a>
 
-<a href="http://www.github.com/devjoaolopes"><img src="https://github-readme-streak-stats.herokuapp.com/?user=devjoaolopes&stroke=ffffff&background=1c1917&ring=0891b2&fire=0891b2&currStreakNum=ffffff&currStreakLabel=0891b2&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" /></a>
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=devjoaolopes&theme=dracula)](https://github.com/anuraghazra/github-readme-stats)
 
-<a href="https://github.com/devjoaolopes" align="left"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=devjoaolopes&langs_count=10&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&locale=en&custom_title=Top%20%Languages" alt="Top Languages" /></a>
