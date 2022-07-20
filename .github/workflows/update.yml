@@ -1,35 +1,37 @@
 name: Update Readme Template
 
-on: 
-    schedule:
-        - cron: '*/5 * * * *'
-    push: 
-        branches: [ master ]
+# on: 
+#     schedule:
+#         - cron: '*/5 * * * *'
+#     push: 
+#         branches: [ master ]
+
+# jobs:
+#   publish:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Push files
+#       - uses: Amraneze/push-to-protected-branch@latest
+#         with: 
+#             repository: ${{ github.repository }}
+#             branch_name: ${{ github.ref_name }}
+#             github_token: ${{ secrets.my_token }}
+#             commit_message: 'auto update readme by github actions'
+#             files_to_commit: 'README.md'
+
 
 jobs:
-  publish:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Push files
-      - uses: Amraneze/push-to-protected-branch@latest
-        with: 
-            repository: ${{ github.repository }}
-            branch_name: ${{ github.ref_name }}
-            github_token: ${{ secrets.my_token }}
-            commit_message: 'auto update readme by github actions'
-            files_to_commit: 'README.md'
-
-
-
-      # - uses: actions/checkout@v2
-      # - name: Generate Readme
-        # with:
-        #     token: ${{ secrets.my_token }}
-        # run: |
-        #   if [[ "$(git status --porcelain)" != "" ]]; then
-        #     git config user.name "GitHub Action"
-        #     git config user.email "action@github.com"
-        #     git add .
-        #     git commit -m "Auto-update README.md"
-        #     git push
-        #   fi
+    - uses: actions/checkout@master
+      with:
+        persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
+        fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+    - name: Create local changes
+      run: |
+        ...
+    - name: Commit & Push changes
+      uses: Andro999b/push@v1.3
+      with:
+        github_token: ${{ secrets.my_token }}
