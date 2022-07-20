@@ -6,20 +6,6 @@ on:
     push: 
         branches: [ master ]
 
-# jobs:
-#   publish:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Push files
-#       - uses: Amraneze/push-to-protected-branch@latest
-#         with: 
-#             repository: ${{ github.repository }}
-#             branch_name: ${{ github.ref_name }}
-#             github_token: ${{ secrets.my_token }}
-#             commit_message: 'auto update readme by github actions'
-#             files_to_commit: 'README.md'
-
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -32,3 +18,4 @@ jobs:
       uses: Andro999b/push@v1.3
       with:
         github_token: ${{ secrets.TOKEN }}
+        message: 'update readme github actions'
