@@ -1,10 +1,10 @@
 name: Update Readme Template
 
-# on: 
-#     schedule:
-#         - cron: '*/5 * * * *'
-#     push: 
-#         branches: [ master ]
+on: 
+    schedule:
+        - cron: '*/5 * * * *'
+    push: 
+        branches: [ master ]
 
 # jobs:
 #   publish:
