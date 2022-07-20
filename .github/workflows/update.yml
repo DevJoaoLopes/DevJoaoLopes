@@ -8,21 +8,25 @@ on:
 
 jobs:
   publish:
-    name: Publish Readme.md
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-        with:
-            fetch-depth: 0
-
-      - name: Generate Readme
-        with:
-            token: ${{ secrets.my_token }}
-        run:
-          if [[ "$(git status --porcelain)" != "" ]]; then
-            git config user.name "GitHub Action"
-            git config user.email "action@github.com"
-            git add .
-            git commit -m "Auto-update README.md"
-            git push
-          fi
+      - name: Push files
+          uses: Amraneze/push-to-protected-branch@latest
+          with:
+            repository: ${{ github.repository }}
+            branch_name: ${{ github.ref_name }}
+            github_token: ${{ secrets.my_token }}
+            commit_message: 'auto update readme by github actions'
+            files_to_commit: 'README.md'
+      # - uses: actions/checkout@v2
+      # - name: Generate Readme
+        # with:
+        #     token: ${{ secrets.my_token }}
+        # run: |
+        #   if [[ "$(git status --porcelain)" != "" ]]; then
+        #     git config user.name "GitHub Action"
+        #     git config user.email "action@github.com"
+        #     git add .
+        #     git commit -m "Auto-update README.md"
+        #     git push
+        #   fi
