@@ -16,6 +16,7 @@ jobs:
             fetch-depth: 0
 
       - name: Generate Readme
+        uses: ./.github/actions/my-action
         with:
             token: ${{ secrets.my_token }}
         run: |
