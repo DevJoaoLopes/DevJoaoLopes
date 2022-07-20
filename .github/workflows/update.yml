@@ -3,7 +3,7 @@ name: Update Readme Template
 
 on:
   schedule:
-    - cron: '5 * * * *'
+    - cron: '*/5 * * * *'
   push:
     branches: [ master ]
 
@@ -11,18 +11,16 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-      # with:
-      #   fetch-depth: 0
-    - name: Generate README.md
-      with:
-        token: ${{ secrets.my_token }}
-    - name: Update README.md
-      run: |
-        if [[ "$(git status --porcelain)" != "" ]]; then
-          git config user.name "GitHub Action"
-          git config user.email "action@github.com"
-          git add .
-          git commit -m "Auto-update README.md"
-          git push
-        fi
+      - uses: actions/checkout@v3
+      - name: Generate README.md
+        with:
+          token: ${{ secrets.my_token }}
+        - name: Update README.md
+        run: |
+          if [[ "$(git status --porcelain)" != "" ]]; then
+            git config user.name "GitHub Action"
+            git config user.email "action@github.com"
+            git add .
+            git commit -m "Auto-update README.md"
+            git push
+          fi
