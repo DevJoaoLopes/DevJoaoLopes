@@ -1,4 +1,4 @@
-Hi 👋 My name is João Lopes -- MUDANÇAAAA
+Hi 👋 My name is João Lopes
 ===========================
 
 Software Developer
