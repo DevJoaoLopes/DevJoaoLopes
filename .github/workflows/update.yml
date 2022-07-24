@@ -3,7 +3,7 @@ name: Update Readme Template
 on: 
     schedule:
         # - cron: '0 0 * * *' # todo dia a meia noite
-        -cron: '*/5 * * * *'
+        - cron: '*/5 * * * *'
     push: 
         branches: [ master ]
 
