@@ -7,16 +7,33 @@ on:
     push: 
         branches: [ master ]
 
-jobs:
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - uses: actions/checkout@master
+#       with:
+#         persist-credentials: false
+#         fetch-depth: 0
+#     - name: Commit & Push changes
+#       uses: Andro999b/push@v1.3
+#       with:
+#         github_token: ${{ secrets.TOKEN }}
+#         message: 'update readme github actions'
+
+jobs: 
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@v2
       with:
         persist-credentials: false
         fetch-depth: 0
-    - name: Commit & Push changes
-      uses: Andro999b/push@v1.3
-      with:
-        github_token: ${{ secrets.TOKEN }}
-        message: 'update readme github actions'
+    - name:
+      run: |-
+        git diff
+        git config --global user.email "actions@users.noreply.github.com"
+        git config --global user.name "README-bot"
+        git add -A
+        git commit -m "Updated content" || exit 0
+        git push origin master
