@@ -40,7 +40,7 @@ Software and technology developer and enthusiast, working on the front-end of we
 <p align="left"> <a href="https://www.github.com/devjoaolopes" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" width="32" height="32" /></a> <a href="http://www.instagram.com/joaovictorpiga" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram.svg" width="32" height="32" /></a> <a href="https://www.linkedin.com/in/joaovictorpiga" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" /></a></p>
 
 
-![DevJoaoLopes GitHub stats](https://github-readme-stats.vercel.app/api?username=devjoaolopes&show_icons=true&theme=dracula)
+[![DevJoaoLopes GitHub stats](https://github-readme-stats.vercel.app/api?username=devjoaolopes&&theme=dracula)](https://github.com/anuraghazra/github-readme-stats)
 
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=devjoaolopes&theme=dracula)](https://github.com/anuraghazra/github-readme-stats)
