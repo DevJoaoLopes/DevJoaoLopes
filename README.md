@@ -1,5 +1,3 @@
- ![visitors](https://visitor-badge.deta.dev/badge?page_id=devjoaolopes&left_color=red&right_color=green)
-
 Hi 👋 My name is João Lopes
 ===========================
 
